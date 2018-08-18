@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>HypoTestInv@src</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
+			<triggers>clean,full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
+			<triggers>full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>[Subprojects]</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] LikelihoodScan/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] SimpleFit/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] StandardFrequentistDiscovery/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] StandardHypoTestInv/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] FitCalculator/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] LikelihoodCalculator/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] LimitCalculator/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] PValueCalculator/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ProfileLikelihoodTestStatEnhanced/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] WorkspaceCalculator/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] LikelihoodScan/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] LikelihoodScan/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] LikelihoodScan/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] LikelihoodScan/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] LikelihoodScan/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] LikelihoodScan/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] SimpleFit/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] SimpleFit/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] SimpleFit/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] SimpleFit/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] SimpleFit/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] SimpleFit/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] StandardFrequentistDiscovery/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] StandardFrequentistDiscovery/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] StandardFrequentistDiscovery/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] StandardFrequentistDiscovery/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] StandardFrequentistDiscovery/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] StandardFrequentistDiscovery/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] StandardHypoTestInv/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] StandardHypoTestInv/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] StandardHypoTestInv/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] StandardHypoTestInv/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] StandardHypoTestInv/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] StandardHypoTestInv/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] FitCalculator/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] FitCalculator/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] FitCalculator/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] FitCalculator/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] FitCalculator/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] FitCalculator/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] LikelihoodCalculator/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] LikelihoodCalculator/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] LikelihoodCalculator/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] LikelihoodCalculator/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] LikelihoodCalculator/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] LikelihoodCalculator/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] LimitCalculator/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] LimitCalculator/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] LimitCalculator/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] LimitCalculator/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] LimitCalculator/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] LimitCalculator/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] PValueCalculator/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] PValueCalculator/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] PValueCalculator/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] PValueCalculator/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] PValueCalculator/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] PValueCalculator/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ProfileLikelihoodTestStatEnhanced/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ProfileLikelihoodTestStatEnhanced/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ProfileLikelihoodTestStatEnhanced/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ProfileLikelihoodTestStatEnhanced/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ProfileLikelihoodTestStatEnhanced/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ProfileLikelihoodTestStatEnhanced/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] WorkspaceCalculator/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] WorkspaceCalculator/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] WorkspaceCalculator/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] WorkspaceCalculator/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] WorkspaceCalculator/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] WorkspaceCalculator/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] LikelihoodScan/Source Files/LikelihoodScan.C</name>
+			<type>1</type>
+			<location>/home/nicolin/CERN/UJ_LimitSetting/src/LikelihoodScan.C</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] SimpleFit/Source Files/SimpleFit.C</name>
+			<type>1</type>
+			<location>/home/nicolin/CERN/UJ_LimitSetting/src/SimpleFit.C</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] StandardFrequentistDiscovery/Source Files/StandardFrequentistDiscovery.C</name>
+			<type>1</type>
+			<location>/home/nicolin/CERN/UJ_LimitSetting/src/StandardFrequentistDiscovery.C</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] StandardHypoTestInv/Source Files/StandardHypoTestInv.C</name>
+			<type>1</type>
+			<location>/home/nicolin/CERN/UJ_LimitSetting/src/StandardHypoTestInv.C</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] FitCalculator/CMake Rules/G__FitCalculator.cxx.rule</name>
+			<type>1</type>
+			<location>/home/nicolin/CERN/UJ_LimitSetting/src/G__FitCalculator.cxx.rule</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] FitCalculator/Source Files/FitCalculator.cxx</name>
+			<type>1</type>
+			<location>/home/nicolin/CERN/UJ_LimitSetting/src/FitCalculator.cxx</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] FitCalculator/Source Files/G__FitCalculator.cxx</name>
+			<type>1</type>
+			<location>/home/nicolin/CERN/UJ_LimitSetting/src/G__FitCalculator.cxx</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] LikelihoodCalculator/CMake Rules/G__LikelihoodCalculator.cxx.rule</name>
+			<type>1</type>
+			<location>/home/nicolin/CERN/UJ_LimitSetting/src/G__LikelihoodCalculator.cxx.rule</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] LikelihoodCalculator/Source Files/G__LikelihoodCalculator.cxx</name>
+			<type>1</type>
+			<location>/home/nicolin/CERN/UJ_LimitSetting/src/G__LikelihoodCalculator.cxx</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] LikelihoodCalculator/Source Files/LikelihoodCalculator.cxx</name>
+			<type>1</type>
+			<location>/home/nicolin/CERN/UJ_LimitSetting/src/LikelihoodCalculator.cxx</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] LimitCalculator/CMake Rules/G__LimitCalculator.cxx.rule</name>
+			<type>1</type>
+			<location>/home/nicolin/CERN/UJ_LimitSetting/src/G__LimitCalculator.cxx.rule</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] LimitCalculator/Source Files/G__LimitCalculator.cxx</name>
+			<type>1</type>
+			<location>/home/nicolin/CERN/UJ_LimitSetting/src/G__LimitCalculator.cxx</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] LimitCalculator/Source Files/LimitCalculator.cxx</name>
+			<type>1</type>
+			<location>/home/nicolin/CERN/UJ_LimitSetting/src/LimitCalculator.cxx</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] PValueCalculator/CMake Rules/G__PValueCalculator.cxx.rule</name>
+			<type>1</type>
+			<location>/home/nicolin/CERN/UJ_LimitSetting/src/G__PValueCalculator.cxx.rule</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] PValueCalculator/Source Files/G__PValueCalculator.cxx</name>
+			<type>1</type>
+			<location>/home/nicolin/CERN/UJ_LimitSetting/src/G__PValueCalculator.cxx</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] PValueCalculator/Source Files/PValueCalculator.cxx</name>
+			<type>1</type>
+			<location>/home/nicolin/CERN/UJ_LimitSetting/src/PValueCalculator.cxx</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ProfileLikelihoodTestStatEnhanced/CMake Rules/G__ProfileLikelihoodTestStatEnhanced.cxx.rule</name>
+			<type>1</type>
+			<location>/home/nicolin/CERN/UJ_LimitSetting/src/G__ProfileLikelihoodTestStatEnhanced.cxx.rule</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ProfileLikelihoodTestStatEnhanced/Source Files/G__ProfileLikelihoodTestStatEnhanced.cxx</name>
+			<type>1</type>
+			<location>/home/nicolin/CERN/UJ_LimitSetting/src/G__ProfileLikelihoodTestStatEnhanced.cxx</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ProfileLikelihoodTestStatEnhanced/Source Files/ProfileLikelihoodTestStatEnhanced.cxx</name>
+			<type>1</type>
+			<location>/home/nicolin/CERN/UJ_LimitSetting/src/ProfileLikelihoodTestStatEnhanced.cxx</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] WorkspaceCalculator/CMake Rules/G__WorkspaceCalculator.cxx.rule</name>
+			<type>1</type>
+			<location>/home/nicolin/CERN/UJ_LimitSetting/src/G__WorkspaceCalculator.cxx.rule</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] WorkspaceCalculator/Source Files/G__WorkspaceCalculator.cxx</name>
+			<type>1</type>
+			<location>/home/nicolin/CERN/UJ_LimitSetting/src/G__WorkspaceCalculator.cxx</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] WorkspaceCalculator/Source Files/WorkspaceCalculator.cxx</name>
+			<type>1</type>
+			<location>/home/nicolin/CERN/UJ_LimitSetting/src/WorkspaceCalculator.cxx</location>
+		</link>
+	</linkedResources>
+</projectDescription>
