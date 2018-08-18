@@ -1,0 +1,2 @@
+/usr/bin/ar qc libFitCalculator.a  CMakeFiles/FitCalculator.dir/G__FitCalculator.cxx.o CMakeFiles/FitCalculator.dir/FitCalculator.cxx.o
+/usr/bin/ranlib libFitCalculator.a

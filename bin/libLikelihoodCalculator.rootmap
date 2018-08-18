@@ -1,0 +1,3 @@
+[ libLikelihoodCalculator.so ]
+# List of selected classes
+class LikelihoodCalculator

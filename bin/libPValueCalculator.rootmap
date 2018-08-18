@@ -1,0 +1,5 @@
+[ libPValueCalculator.so ]
+# List of selected classes
+class PValueCalculator
+# List of selected namespaces
+namespace RooStats

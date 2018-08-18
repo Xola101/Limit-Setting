@@ -1,0 +1,2 @@
+/usr/bin/ar qc libLimitCalculator.a  CMakeFiles/LimitCalculator.dir/G__LimitCalculator.cxx.o CMakeFiles/LimitCalculator.dir/LimitCalculator.cxx.o
+/usr/bin/ranlib libLimitCalculator.a

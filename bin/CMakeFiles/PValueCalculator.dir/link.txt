@@ -1,0 +1,2 @@
+/usr/bin/ar qc libPValueCalculator.a  CMakeFiles/PValueCalculator.dir/G__PValueCalculator.cxx.o CMakeFiles/PValueCalculator.dir/PValueCalculator.cxx.o
+/usr/bin/ranlib libPValueCalculator.a

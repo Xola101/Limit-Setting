@@ -1,0 +1,2 @@
+/usr/bin/ar qc libLikelihoodCalculator.a  CMakeFiles/LikelihoodCalculator.dir/G__LikelihoodCalculator.cxx.o CMakeFiles/LikelihoodCalculator.dir/LikelihoodCalculator.cxx.o
+/usr/bin/ranlib libLikelihoodCalculator.a

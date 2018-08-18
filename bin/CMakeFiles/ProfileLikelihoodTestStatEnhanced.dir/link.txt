@@ -1,0 +1,2 @@
+/usr/bin/ar qc libProfileLikelihoodTestStatEnhanced.a  CMakeFiles/ProfileLikelihoodTestStatEnhanced.dir/G__ProfileLikelihoodTestStatEnhanced.cxx.o CMakeFiles/ProfileLikelihoodTestStatEnhanced.dir/ProfileLikelihoodTestStatEnhanced.cxx.o
+/usr/bin/ranlib libProfileLikelihoodTestStatEnhanced.a

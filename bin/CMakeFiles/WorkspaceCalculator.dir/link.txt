@@ -1,0 +1,2 @@
+/usr/bin/ar qc libWorkspaceCalculator.a  CMakeFiles/WorkspaceCalculator.dir/G__WorkspaceCalculator.cxx.o CMakeFiles/WorkspaceCalculator.dir/WorkspaceCalculator.cxx.o
+/usr/bin/ranlib libWorkspaceCalculator.a

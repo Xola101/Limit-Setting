@@ -1,0 +1,8 @@
+[ libWorkspaceCalculator.so ]
+# List of selected classes
+class TOwnedList
+class WorkspaceCalculator
+# List of selected namespaces
+namespace RooStats
+# List of selected vars
+var NaN

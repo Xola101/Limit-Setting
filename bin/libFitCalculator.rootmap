@@ -1,0 +1,3 @@
+[ libFitCalculator.so ]
+# List of selected classes
+class FitCalculator
