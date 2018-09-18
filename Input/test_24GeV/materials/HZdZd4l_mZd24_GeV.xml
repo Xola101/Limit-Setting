@@ -1,0 +1,9 @@
+<!--Driver xml or top xml, we need only one of this kind. It combines all channel xml files -->
+<!DOCTYPE Combination  SYSTEM '/afs/cern.ch/sw/lcg/app/releases/ROOT/5.34.22/x86_64-slc6-gcc48-opt/root/etc/HistFactorySchema.dtd'>
+<Combination OutputFilePrefix="HZdZd4l_mZd24_GeV"> <!--Mode="comb" -->
+  <Input>channel_4mu_mZd24_GeV.xml</Input>
+  <Measurement Name="allsys" Lumi="1" LumiRelErr="0.043" BinLow="0" BinHigh="60" Mode="comb" ExportOnly="True"> 
+    <POI>mu</POI>
+    <ParamSetting Const="True">Lumi </ParamSetting>
+  </Measurement>
+</Combination>

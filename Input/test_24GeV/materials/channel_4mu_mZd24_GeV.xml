@@ -1,0 +1,16 @@
+<!DOCTYPE Channel  SYSTEM '/afs/cern.ch/sw/lcg/app/releases/ROOT/5.32.04/x86_64-slc5-gcc43-dbg/root/etc/HistFactorySchema.dtd' >
+<Channel Name="ATLAS_2016_HZdZd_4mu" 	 InputFile="/afs/cern.ch/work/l/lotruong/HZdZdRunII/Limit/Input/20170311_v3/totXS_a0a0/4mu/FinalFiles/newmediumSR_efficiency_4muchannelmZd24GeV.root" 	 HistoPath="" >
+
+<Data HistoName="Data"/>
+  <StatErrorConfig RelErrorThreshold="0.0" 	 ConstraintType="Poisson" />
+
+  <Sample Name="Signal" 	 HistoName="sig" 	 HistoPath="STAT/" 	 NormalizeByTheory="False" >
+    <StatError Activate="False" />
+  <NormFactor Name="mu" Val="1" 	 Low="0." 	 High="15." Const="True"/>
+  </Sample>
+
+  <Sample Name="tot-bkg" 	 InputFile="/afs/cern.ch/work/l/lotruong/HZdZdRunII/Limit/Input/20170311_v3/totXS_a0a0/4mu/newmediumSR_avgMll_4muchannel_smooth.root" HistoName="bkg" 	 HistoPath="STAT/" 	 NormalizeByTheory="False" >
+    <StatError Activate="True" />
+  </Sample>
+
+</Channel>

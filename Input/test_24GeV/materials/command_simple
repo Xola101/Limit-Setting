@@ -1,0 +1,5 @@
+echo "write the name of folder"
+read name
+ 
+
+echo "root -b -q 'runAsymptoticsCLs.C+(\"HZdZd4l_mZd24_GeV_combined_allsys_model.root\",\"combined\",\"ModelConfig\",\"obsData\",\"asimovData_0\",\"$name\",\"125\",0.95)'"
