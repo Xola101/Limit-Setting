@@ -40,11 +40,11 @@ void SimpleFit (const char* args="")
 }
 
 #else
-
-int main (int argc, const char** argv)
-{
+  printf("StandAlone mode disabled\n");
+//int main (int argc, const char** argv)
+//{
   // Main program when run stand-alone
-  FitCalculator calc ("SimpleFit", argc, argv);
-  return calc.Run();
-}
+//  FitCalculator calc ("SimpleFit", argc, argv);
+//  return calc.Run();
+//}
 #endif

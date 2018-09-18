@@ -1,0 +1,11 @@
+CMAKE/MAKE  will create one main executable
+
+1) StandardHypoTestInv
+
+
+SimpleFit and Likelihood scan is used by the 2 exes. 
+StandardFrequentistDiscovery is not built
+
+To run on local machine:
+
+./StandardHypoTestInv  ../Input/HZdZd4l_mZd60_GeV_combined_allsys_model.root -w 'combined' -d 'obsData'

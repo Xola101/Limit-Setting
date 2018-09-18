@@ -48,10 +48,10 @@ static void ResetCalc()
 
 void
 StandardHypoTestInv(const char * infile,
-                    const char * wsName,
+                    const char * wsName="combined",
                     const char * modelSBName = "ModelConfig",
                     const char * modelBName = "",
-                    const char * dataName = "combData",
+                    const char * dataName = "obsData",
                     int calculatorType = 0,
                     int testStatType = -1,  // default=2 or what's read from results file
                     bool useCLs = true ,

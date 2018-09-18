@@ -1,0 +1,118 @@
+Scan configuration:
+
+The limit_submit script can be used to submit multiple batch or Grid jobs to
+fill the sampling distributions. The scan is controlled by a configuration file
+limit_comb.py (or other limit_*.py files for alternate configurations, eg. for
+other sets of workspaces). Parameters not specified there are given defaults
+at the top of limit_submit.
+
+limit_comb.py specifies the workspace names (H_comb_*_AaronArmbruster.root) and
+parameters for each mass point: the mu range and step size to scan and the
+approximate time taken for each toy (this is used to determine how to split up
+the job). The step size defaults to the 'mustep' setting in limit_submit.
+
+You should copy or symlink the workspace files to your working directory with
+the names specified in limit_comb.py.
+
+
+Grid setup:
+
+  voms-proxy-init -voms atlas
+  . /afs/cern.ch/atlas/offline/external/GRID/DA/panda-client/latest/etc/panda/panda_setup.sh
+
+
+Submission:
+
+Check the job submission commands in limit_settings.py (this is read in by
+limit_submit).
+
+For the Grid, the jobs will be submitted with Panda's prun command. The prun
+command might have to be modified, eg. to select or exclude bad sites
+(prun --excludedSite=SITE) or request automatic transfer of the output
+(prun --destSE=SE). The default options currently specify copying the results
+into Chirp (https://twiki.cern.ch/twiki/bin/viewauth/Atlas/ChirpForUserOutput).
+
+Then, to submit the 160 GeV combined workspace limit calculation:
+
+  ./limit_submit 160
+
+Use -t to test and see what it'll do before filling up the world-wide Grid.
+Each prun command will submit one job-set, which will run several jobs (eg. 100).
+Use -b to submit to batch (edit your batch submission command in limit_submit,
+currently set up for CERN lxplus), where there is no grouping into job-sets.
+
+Specify -z to run StandardFrequentistDiscovery to calculate p0.
+
+Specify -w gg, -w WW2l, or -w WWlnuqq to use a different set of
+workspaces (parameters defined in limit_*.py files) instead of
+the default combined workspaces (limit_comb.py).
+Use ./limit_submit -h for help with other options.
+
+The command in the prun --exec option (as printed with limit_submit -t),
+is just ./limit_job_grid (same as StandardHypoTestInv, but with some Grid setup)
+with options. The options are (from StandardHypoTestInv help):
+
+  ./StandardHypoTestInv WORKSPACE-FILE.root \
+      -w workspace -m modelConfig -d dataset \
+      -p jobNum -n nPointsToScan -t nToys -M invMass -1 muMax
+
+limit_submit sets the -p jobNum option to %RNDM:0, which is replaced by
+Panda with 0,1,2...nJobs for each job. This can be used to select different
+random number seeds for each job, though the default is to select a "random"
+seed for each job anyway.
+
+
+Retrieving the results:
+
+Once submitted, check your Panda page, linked from here:
+
+  http://panda.cern.ch/server/pandamon/query?ui=users
+
+You'll see one dataset per job set, which you need to get back to
+local storage. It's quite small, 1-5 MB per dataset.
+
+If you used Chirp and have the Chirp file system mounted locally (see
+the FUSE section of the ATLAS Chirp documentation), you can access the
+output directly at chirp/voatlas92.cern.ch/adye/user.adye.H_comb_160.1.*/*.root
+
+Alternatively, if a destSE was specified on the prun command, then the output should be
+automatically transferred to the specified storage.
+Alternatively, you can request this transfer using the DDM web interface.
+See here: http://panda.cern.ch/server/pandamon/query?mode=ddm_req
+
+A third option is to retrieve it with dq2-get, eg.
+
+  dq2-get -f "*.root" "user.adye.H_comb_160.1.*/"
+
+to get all the datasets back (note the quotes to prevent the wildcards being
+expanded by the shell). If you want the logfiles too, then leave out
+the -f "*.root" - or look at them on Panda web.
+
+The files are combined using wildcards, so make sure that all the files for one
+mass can be distinguished by wildcard, eg. user.adye.H_comb_160.1.*/*Results.root .
+Files can be accessed from another system with the TUrl syntax
+(eg. root://server/file.root) and the full path can contain wildcards.
+
+
+Combining the results:
+
+For each mass point, run StandardHypoTestInv, specifying the Results.root files
+by wildcard, eg.
+
+  StandardHypoTestInv -r Results160.root user.adye.H_comb_160.1.*/*Results.root
+
+StandardHypoTestInv will then calculate and print the limits for this point.
+It will also write a file, Results160.root, with the limits.
+
+Once all the mass points have been done, a plot and table of results can be
+made using:
+
+  root limitPlot.C
+
+This will use all files Results*.root. Different file names and limits can be
+set using the options or editing limitPlot.C.
+
+Use StandardFrequentistDiscovery to combine p0 results (input files
+called p0.root, by default).  p0Plot.C plots the results.
+
+

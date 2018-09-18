@@ -63,15 +63,15 @@ add_executable(StandardHypoTestInv StandardHypoTestInv.cxx)
 target_link_libraries(StandardHypoTestInv PUBLIC
     WorkspaceCalculator ProfileLikelihoodTestStatEnhanced LimitCalculator)
 
-add_executable(StandardFrequentistDiscovery StandardFrequentistDiscovery.cxx)
-target_link_libraries(StandardFrequentistDiscovery PUBLIC
-    WorkspaceCalculator ProfileLikelihoodTestStatEnhanced PValueCalculator)
+#add_executable(StandardFrequentistDiscovery StandardFrequentistDiscovery.cxx)
+#target_link_libraries(StandardFrequentistDiscovery PUBLIC
+#    WorkspaceCalculator ProfileLikelihoodTestStatEnhanced PValueCalculator)
 
-add_executable(LikelihoodScan LikelihoodScan.cxx)
-target_link_libraries(LikelihoodScan PUBLIC
-    WorkspaceCalculator ProfileLikelihoodTestStatEnhanced LikelihoodCalculator)
+#add_executable(LikelihoodScan LikelihoodScan.cxx)
+#target_link_libraries(LikelihoodScan PUBLIC
+#    WorkspaceCalculator ProfileLikelihoodTestStatEnhanced LikelihoodCalculator)
 
-add_executable(SimpleFit SimpleFit.cxx)
-target_link_libraries(SimpleFit PUBLIC
-    WorkspaceCalculator ProfileLikelihoodTestStatEnhanced FitCalculator)
+#add_executable(SimpleFit SimpleFit.cxx)
+#target_link_libraries(SimpleFit PUBLIC
+#    WorkspaceCalculator ProfileLikelihoodTestStatEnhanced FitCalculator)
 

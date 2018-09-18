@@ -41,11 +41,11 @@ void LikelihoodScan (const char* args="")
 }
 
 #else
-
-int main (int argc, const char** argv)
-{
+printf("StandAlone mode disabled\n");
+//int main (int argc, const char** argv)
+//{
   // Main program when run stand-alone
-  LikelihoodCalculator calc ("LikelihoodScan", argc, argv);
-  return calc.Run();
-}
+//  LikelihoodCalculator calc ("LikelihoodScan", argc, argv);
+//  return calc.Run();
+//}
 #endif
