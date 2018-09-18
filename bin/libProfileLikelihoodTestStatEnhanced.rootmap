@@ -1,8 +1,0 @@
-{ decls }
-namespace RooStats {  }
-
-[ libProfileLikelihoodTestStatEnhanced.so ]
-# List of selected classes
-class RooStats::ProfileLikelihoodTestStatEnhanced
-# List of selected namespaces
-namespace RooStats

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.C.o"
+  "CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.cxx.o"
   "StandardFrequentistDiscovery.pdb"
   "StandardFrequentistDiscovery"
 )

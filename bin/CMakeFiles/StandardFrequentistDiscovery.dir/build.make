@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nicolin/CERN/LimitSetting/src
+CMAKE_SOURCE_DIR = /home/nicolin/CERN/UJ_LimitSetting/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nicolin/CERN/LimitSetting/bin
+CMAKE_BINARY_DIR = /home/nicolin/CERN/UJ_LimitSetting/bin
 
 # Include any dependencies generated for this target.
 include CMakeFiles/StandardFrequentistDiscovery.dir/depend.make
@@ -57,27 +57,27 @@ include CMakeFiles/StandardFrequentistDiscovery.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/StandardFrequentistDiscovery.dir/flags.make
 
-CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.C.o: CMakeFiles/StandardFrequentistDiscovery.dir/flags.make
-CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.C.o: /home/nicolin/CERN/LimitSetting/src/StandardFrequentistDiscovery.C
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nicolin/CERN/LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.C.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.C.o -c /home/nicolin/CERN/LimitSetting/src/StandardFrequentistDiscovery.C
+CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.cxx.o: CMakeFiles/StandardFrequentistDiscovery.dir/flags.make
+CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.cxx.o: /home/nicolin/CERN/UJ_LimitSetting/src/StandardFrequentistDiscovery.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nicolin/CERN/UJ_LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.cxx.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.cxx.o -c /home/nicolin/CERN/UJ_LimitSetting/src/StandardFrequentistDiscovery.cxx
 
-CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.C.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.C.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nicolin/CERN/LimitSetting/src/StandardFrequentistDiscovery.C > CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.C.i
+CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.cxx.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nicolin/CERN/UJ_LimitSetting/src/StandardFrequentistDiscovery.cxx > CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.cxx.i
 
-CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.C.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.C.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nicolin/CERN/LimitSetting/src/StandardFrequentistDiscovery.C -o CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.C.s
+CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.cxx.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nicolin/CERN/UJ_LimitSetting/src/StandardFrequentistDiscovery.cxx -o CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.cxx.s
 
 # Object files for target StandardFrequentistDiscovery
 StandardFrequentistDiscovery_OBJECTS = \
-"CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.C.o"
+"CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.cxx.o"
 
 # External object files for target StandardFrequentistDiscovery
 StandardFrequentistDiscovery_EXTERNAL_OBJECTS =
 
-StandardFrequentistDiscovery: CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.C.o
+StandardFrequentistDiscovery: CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.cxx.o
 StandardFrequentistDiscovery: CMakeFiles/StandardFrequentistDiscovery.dir/build.make
 StandardFrequentistDiscovery: libWorkspaceCalculator.a
 StandardFrequentistDiscovery: libProfileLikelihoodTestStatEnhanced.a
@@ -112,7 +112,7 @@ StandardFrequentistDiscovery: /usr/local/lib/libRIO.so
 StandardFrequentistDiscovery: /usr/local/lib/libThread.so
 StandardFrequentistDiscovery: /usr/local/lib/libCore.so
 StandardFrequentistDiscovery: CMakeFiles/StandardFrequentistDiscovery.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nicolin/CERN/LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable StandardFrequentistDiscovery"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nicolin/CERN/UJ_LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable StandardFrequentistDiscovery"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/StandardFrequentistDiscovery.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -125,6 +125,6 @@ CMakeFiles/StandardFrequentistDiscovery.dir/clean:
 .PHONY : CMakeFiles/StandardFrequentistDiscovery.dir/clean
 
 CMakeFiles/StandardFrequentistDiscovery.dir/depend:
-	cd /home/nicolin/CERN/LimitSetting/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nicolin/CERN/LimitSetting/src /home/nicolin/CERN/LimitSetting/src /home/nicolin/CERN/LimitSetting/bin /home/nicolin/CERN/LimitSetting/bin /home/nicolin/CERN/LimitSetting/bin/CMakeFiles/StandardFrequentistDiscovery.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nicolin/CERN/UJ_LimitSetting/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nicolin/CERN/UJ_LimitSetting/src /home/nicolin/CERN/UJ_LimitSetting/src /home/nicolin/CERN/UJ_LimitSetting/bin /home/nicolin/CERN/UJ_LimitSetting/bin /home/nicolin/CERN/UJ_LimitSetting/bin/CMakeFiles/StandardFrequentistDiscovery.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/StandardFrequentistDiscovery.dir/depend
 

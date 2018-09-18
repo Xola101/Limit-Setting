@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.C.o"
+  "CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.cxx.o"
   "StandardHypoTestInv.pdb"
   "StandardHypoTestInv"
 )

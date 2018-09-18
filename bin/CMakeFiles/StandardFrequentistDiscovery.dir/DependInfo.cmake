@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/nicolin/CERN/LimitSetting/src/StandardFrequentistDiscovery.C" "/home/nicolin/CERN/LimitSetting/bin/CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.C.o"
+  "/home/nicolin/CERN/UJ_LimitSetting/src/StandardFrequentistDiscovery.cxx" "/home/nicolin/CERN/UJ_LimitSetting/bin/CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.cxx.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,9 +15,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/nicolin/CERN/LimitSetting/bin/CMakeFiles/WorkspaceCalculator.dir/DependInfo.cmake"
-  "/home/nicolin/CERN/LimitSetting/bin/CMakeFiles/ProfileLikelihoodTestStatEnhanced.dir/DependInfo.cmake"
-  "/home/nicolin/CERN/LimitSetting/bin/CMakeFiles/PValueCalculator.dir/DependInfo.cmake"
+  "/home/nicolin/CERN/UJ_LimitSetting/bin/CMakeFiles/WorkspaceCalculator.dir/DependInfo.cmake"
+  "/home/nicolin/CERN/UJ_LimitSetting/bin/CMakeFiles/ProfileLikelihoodTestStatEnhanced.dir/DependInfo.cmake"
+  "/home/nicolin/CERN/UJ_LimitSetting/bin/CMakeFiles/PValueCalculator.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

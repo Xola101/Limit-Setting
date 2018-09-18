@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nicolin/CERN/LimitSetting/src
+CMAKE_SOURCE_DIR = /home/nicolin/CERN/UJ_LimitSetting/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nicolin/CERN/LimitSetting/bin
+CMAKE_BINARY_DIR = /home/nicolin/CERN/UJ_LimitSetting/bin
 
 # Include any dependencies generated for this target.
 include CMakeFiles/StandardHypoTestInv.dir/depend.make
@@ -57,27 +57,27 @@ include CMakeFiles/StandardHypoTestInv.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/StandardHypoTestInv.dir/flags.make
 
-CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.C.o: CMakeFiles/StandardHypoTestInv.dir/flags.make
-CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.C.o: /home/nicolin/CERN/LimitSetting/src/StandardHypoTestInv.C
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nicolin/CERN/LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.C.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.C.o -c /home/nicolin/CERN/LimitSetting/src/StandardHypoTestInv.C
+CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.cxx.o: CMakeFiles/StandardHypoTestInv.dir/flags.make
+CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.cxx.o: /home/nicolin/CERN/UJ_LimitSetting/src/StandardHypoTestInv.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nicolin/CERN/UJ_LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.cxx.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.cxx.o -c /home/nicolin/CERN/UJ_LimitSetting/src/StandardHypoTestInv.cxx
 
-CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.C.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.C.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nicolin/CERN/LimitSetting/src/StandardHypoTestInv.C > CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.C.i
+CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.cxx.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nicolin/CERN/UJ_LimitSetting/src/StandardHypoTestInv.cxx > CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.cxx.i
 
-CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.C.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.C.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nicolin/CERN/LimitSetting/src/StandardHypoTestInv.C -o CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.C.s
+CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.cxx.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nicolin/CERN/UJ_LimitSetting/src/StandardHypoTestInv.cxx -o CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.cxx.s
 
 # Object files for target StandardHypoTestInv
 StandardHypoTestInv_OBJECTS = \
-"CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.C.o"
+"CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.cxx.o"
 
 # External object files for target StandardHypoTestInv
 StandardHypoTestInv_EXTERNAL_OBJECTS =
 
-StandardHypoTestInv: CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.C.o
+StandardHypoTestInv: CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.cxx.o
 StandardHypoTestInv: CMakeFiles/StandardHypoTestInv.dir/build.make
 StandardHypoTestInv: libWorkspaceCalculator.a
 StandardHypoTestInv: libProfileLikelihoodTestStatEnhanced.a
@@ -112,7 +112,7 @@ StandardHypoTestInv: /usr/local/lib/libRIO.so
 StandardHypoTestInv: /usr/local/lib/libThread.so
 StandardHypoTestInv: /usr/local/lib/libCore.so
 StandardHypoTestInv: CMakeFiles/StandardHypoTestInv.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nicolin/CERN/LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable StandardHypoTestInv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nicolin/CERN/UJ_LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable StandardHypoTestInv"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/StandardHypoTestInv.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -125,6 +125,6 @@ CMakeFiles/StandardHypoTestInv.dir/clean:
 .PHONY : CMakeFiles/StandardHypoTestInv.dir/clean
 
 CMakeFiles/StandardHypoTestInv.dir/depend:
-	cd /home/nicolin/CERN/LimitSetting/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nicolin/CERN/LimitSetting/src /home/nicolin/CERN/LimitSetting/src /home/nicolin/CERN/LimitSetting/bin /home/nicolin/CERN/LimitSetting/bin /home/nicolin/CERN/LimitSetting/bin/CMakeFiles/StandardHypoTestInv.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nicolin/CERN/UJ_LimitSetting/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nicolin/CERN/UJ_LimitSetting/src /home/nicolin/CERN/UJ_LimitSetting/src /home/nicolin/CERN/UJ_LimitSetting/bin /home/nicolin/CERN/UJ_LimitSetting/bin /home/nicolin/CERN/UJ_LimitSetting/bin/CMakeFiles/StandardHypoTestInv.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/StandardHypoTestInv.dir/depend
 

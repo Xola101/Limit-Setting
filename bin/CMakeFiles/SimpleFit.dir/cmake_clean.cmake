@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/SimpleFit.dir/SimpleFit.C.o"
+  "CMakeFiles/SimpleFit.dir/SimpleFit.cxx.o"
   "SimpleFit.pdb"
   "SimpleFit"
 )

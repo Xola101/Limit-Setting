@@ -1,5 +1,0 @@
-[ libLimitCalculator.so ]
-# List of selected classes
-class LimitCalculator
-# List of selected namespaces
-namespace RooStats

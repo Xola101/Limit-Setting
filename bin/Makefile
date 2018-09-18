@@ -48,24 +48,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nicolin/CERN/LimitSetting/src
+CMAKE_SOURCE_DIR = /home/nicolin/CERN/UJ_LimitSetting/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nicolin/CERN/LimitSetting/bin
+CMAKE_BINARY_DIR = /home/nicolin/CERN/UJ_LimitSetting/bin
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -78,11 +67,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nicolin/CERN/LimitSetting/bin/CMakeFiles /home/nicolin/CERN/LimitSetting/bin/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nicolin/CERN/UJ_LimitSetting/bin/CMakeFiles /home/nicolin/CERN/UJ_LimitSetting/bin/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nicolin/CERN/LimitSetting/bin/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nicolin/CERN/UJ_LimitSetting/bin/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,186 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named LimitCalculator
+# Target rules for targets named StandardHypoTestInv
 
 # Build rule for target.
-LimitCalculator: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 LimitCalculator
-.PHONY : LimitCalculator
+StandardHypoTestInv: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 StandardHypoTestInv
+.PHONY : StandardHypoTestInv
 
 # fast build rule for target.
-LimitCalculator/fast:
-	$(MAKE) -f CMakeFiles/LimitCalculator.dir/build.make CMakeFiles/LimitCalculator.dir/build
-.PHONY : LimitCalculator/fast
-
-#=============================================================================
-# Target rules for targets named WorkspaceCalculator
-
-# Build rule for target.
-WorkspaceCalculator: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 WorkspaceCalculator
-.PHONY : WorkspaceCalculator
-
-# fast build rule for target.
-WorkspaceCalculator/fast:
-	$(MAKE) -f CMakeFiles/WorkspaceCalculator.dir/build.make CMakeFiles/WorkspaceCalculator.dir/build
-.PHONY : WorkspaceCalculator/fast
-
-#=============================================================================
-# Target rules for targets named FitCalculator
-
-# Build rule for target.
-FitCalculator: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 FitCalculator
-.PHONY : FitCalculator
-
-# fast build rule for target.
-FitCalculator/fast:
-	$(MAKE) -f CMakeFiles/FitCalculator.dir/build.make CMakeFiles/FitCalculator.dir/build
-.PHONY : FitCalculator/fast
-
-#=============================================================================
-# Target rules for targets named G__ProfileLikelihoodTestStatEnhanced
-
-# Build rule for target.
-G__ProfileLikelihoodTestStatEnhanced: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 G__ProfileLikelihoodTestStatEnhanced
-.PHONY : G__ProfileLikelihoodTestStatEnhanced
-
-# fast build rule for target.
-G__ProfileLikelihoodTestStatEnhanced/fast:
-	$(MAKE) -f CMakeFiles/G__ProfileLikelihoodTestStatEnhanced.dir/build.make CMakeFiles/G__ProfileLikelihoodTestStatEnhanced.dir/build
-.PHONY : G__ProfileLikelihoodTestStatEnhanced/fast
-
-#=============================================================================
-# Target rules for targets named LikelihoodCalculator
-
-# Build rule for target.
-LikelihoodCalculator: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 LikelihoodCalculator
-.PHONY : LikelihoodCalculator
-
-# fast build rule for target.
-LikelihoodCalculator/fast:
-	$(MAKE) -f CMakeFiles/LikelihoodCalculator.dir/build.make CMakeFiles/LikelihoodCalculator.dir/build
-.PHONY : LikelihoodCalculator/fast
-
-#=============================================================================
-# Target rules for targets named G__FitCalculator
-
-# Build rule for target.
-G__FitCalculator: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 G__FitCalculator
-.PHONY : G__FitCalculator
-
-# fast build rule for target.
-G__FitCalculator/fast:
-	$(MAKE) -f CMakeFiles/G__FitCalculator.dir/build.make CMakeFiles/G__FitCalculator.dir/build
-.PHONY : G__FitCalculator/fast
-
-#=============================================================================
-# Target rules for targets named G__LimitCalculator
-
-# Build rule for target.
-G__LimitCalculator: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 G__LimitCalculator
-.PHONY : G__LimitCalculator
-
-# fast build rule for target.
-G__LimitCalculator/fast:
-	$(MAKE) -f CMakeFiles/G__LimitCalculator.dir/build.make CMakeFiles/G__LimitCalculator.dir/build
-.PHONY : G__LimitCalculator/fast
-
-#=============================================================================
-# Target rules for targets named LikelihoodScan
-
-# Build rule for target.
-LikelihoodScan: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 LikelihoodScan
-.PHONY : LikelihoodScan
-
-# fast build rule for target.
-LikelihoodScan/fast:
-	$(MAKE) -f CMakeFiles/LikelihoodScan.dir/build.make CMakeFiles/LikelihoodScan.dir/build
-.PHONY : LikelihoodScan/fast
-
-#=============================================================================
-# Target rules for targets named SimpleFit
-
-# Build rule for target.
-SimpleFit: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 SimpleFit
-.PHONY : SimpleFit
-
-# fast build rule for target.
-SimpleFit/fast:
-	$(MAKE) -f CMakeFiles/SimpleFit.dir/build.make CMakeFiles/SimpleFit.dir/build
-.PHONY : SimpleFit/fast
-
-#=============================================================================
-# Target rules for targets named G__LikelihoodCalculator
-
-# Build rule for target.
-G__LikelihoodCalculator: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 G__LikelihoodCalculator
-.PHONY : G__LikelihoodCalculator
-
-# fast build rule for target.
-G__LikelihoodCalculator/fast:
-	$(MAKE) -f CMakeFiles/G__LikelihoodCalculator.dir/build.make CMakeFiles/G__LikelihoodCalculator.dir/build
-.PHONY : G__LikelihoodCalculator/fast
-
-#=============================================================================
-# Target rules for targets named G__PValueCalculator
-
-# Build rule for target.
-G__PValueCalculator: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 G__PValueCalculator
-.PHONY : G__PValueCalculator
-
-# fast build rule for target.
-G__PValueCalculator/fast:
-	$(MAKE) -f CMakeFiles/G__PValueCalculator.dir/build.make CMakeFiles/G__PValueCalculator.dir/build
-.PHONY : G__PValueCalculator/fast
-
-#=============================================================================
-# Target rules for targets named G__WorkspaceCalculator
-
-# Build rule for target.
-G__WorkspaceCalculator: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 G__WorkspaceCalculator
-.PHONY : G__WorkspaceCalculator
-
-# fast build rule for target.
-G__WorkspaceCalculator/fast:
-	$(MAKE) -f CMakeFiles/G__WorkspaceCalculator.dir/build.make CMakeFiles/G__WorkspaceCalculator.dir/build
-.PHONY : G__WorkspaceCalculator/fast
-
-#=============================================================================
-# Target rules for targets named StandardFrequentistDiscovery
-
-# Build rule for target.
-StandardFrequentistDiscovery: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 StandardFrequentistDiscovery
-.PHONY : StandardFrequentistDiscovery
-
-# fast build rule for target.
-StandardFrequentistDiscovery/fast:
-	$(MAKE) -f CMakeFiles/StandardFrequentistDiscovery.dir/build.make CMakeFiles/StandardFrequentistDiscovery.dir/build
-.PHONY : StandardFrequentistDiscovery/fast
-
-#=============================================================================
-# Target rules for targets named ProfileLikelihoodTestStatEnhanced
-
-# Build rule for target.
-ProfileLikelihoodTestStatEnhanced: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ProfileLikelihoodTestStatEnhanced
-.PHONY : ProfileLikelihoodTestStatEnhanced
-
-# fast build rule for target.
-ProfileLikelihoodTestStatEnhanced/fast:
-	$(MAKE) -f CMakeFiles/ProfileLikelihoodTestStatEnhanced.dir/build.make CMakeFiles/ProfileLikelihoodTestStatEnhanced.dir/build
-.PHONY : ProfileLikelihoodTestStatEnhanced/fast
+StandardHypoTestInv/fast:
+	$(MAKE) -f CMakeFiles/StandardHypoTestInv.dir/build.make CMakeFiles/StandardHypoTestInv.dir/build
+.PHONY : StandardHypoTestInv/fast
 
 #=============================================================================
 # Target rules for targets named PValueCalculator
@@ -306,17 +137,147 @@ PValueCalculator/fast:
 .PHONY : PValueCalculator/fast
 
 #=============================================================================
-# Target rules for targets named StandardHypoTestInv
+# Target rules for targets named G__PValueCalculator
 
 # Build rule for target.
-StandardHypoTestInv: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 StandardHypoTestInv
-.PHONY : StandardHypoTestInv
+G__PValueCalculator: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 G__PValueCalculator
+.PHONY : G__PValueCalculator
 
 # fast build rule for target.
-StandardHypoTestInv/fast:
-	$(MAKE) -f CMakeFiles/StandardHypoTestInv.dir/build.make CMakeFiles/StandardHypoTestInv.dir/build
-.PHONY : StandardHypoTestInv/fast
+G__PValueCalculator/fast:
+	$(MAKE) -f CMakeFiles/G__PValueCalculator.dir/build.make CMakeFiles/G__PValueCalculator.dir/build
+.PHONY : G__PValueCalculator/fast
+
+#=============================================================================
+# Target rules for targets named G__LikelihoodCalculator
+
+# Build rule for target.
+G__LikelihoodCalculator: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 G__LikelihoodCalculator
+.PHONY : G__LikelihoodCalculator
+
+# fast build rule for target.
+G__LikelihoodCalculator/fast:
+	$(MAKE) -f CMakeFiles/G__LikelihoodCalculator.dir/build.make CMakeFiles/G__LikelihoodCalculator.dir/build
+.PHONY : G__LikelihoodCalculator/fast
+
+#=============================================================================
+# Target rules for targets named G__LimitCalculator
+
+# Build rule for target.
+G__LimitCalculator: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 G__LimitCalculator
+.PHONY : G__LimitCalculator
+
+# fast build rule for target.
+G__LimitCalculator/fast:
+	$(MAKE) -f CMakeFiles/G__LimitCalculator.dir/build.make CMakeFiles/G__LimitCalculator.dir/build
+.PHONY : G__LimitCalculator/fast
+
+#=============================================================================
+# Target rules for targets named G__WorkspaceCalculator
+
+# Build rule for target.
+G__WorkspaceCalculator: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 G__WorkspaceCalculator
+.PHONY : G__WorkspaceCalculator
+
+# fast build rule for target.
+G__WorkspaceCalculator/fast:
+	$(MAKE) -f CMakeFiles/G__WorkspaceCalculator.dir/build.make CMakeFiles/G__WorkspaceCalculator.dir/build
+.PHONY : G__WorkspaceCalculator/fast
+
+#=============================================================================
+# Target rules for targets named LikelihoodCalculator
+
+# Build rule for target.
+LikelihoodCalculator: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LikelihoodCalculator
+.PHONY : LikelihoodCalculator
+
+# fast build rule for target.
+LikelihoodCalculator/fast:
+	$(MAKE) -f CMakeFiles/LikelihoodCalculator.dir/build.make CMakeFiles/LikelihoodCalculator.dir/build
+.PHONY : LikelihoodCalculator/fast
+
+#=============================================================================
+# Target rules for targets named G__ProfileLikelihoodTestStatEnhanced
+
+# Build rule for target.
+G__ProfileLikelihoodTestStatEnhanced: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 G__ProfileLikelihoodTestStatEnhanced
+.PHONY : G__ProfileLikelihoodTestStatEnhanced
+
+# fast build rule for target.
+G__ProfileLikelihoodTestStatEnhanced/fast:
+	$(MAKE) -f CMakeFiles/G__ProfileLikelihoodTestStatEnhanced.dir/build.make CMakeFiles/G__ProfileLikelihoodTestStatEnhanced.dir/build
+.PHONY : G__ProfileLikelihoodTestStatEnhanced/fast
+
+#=============================================================================
+# Target rules for targets named FitCalculator
+
+# Build rule for target.
+FitCalculator: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 FitCalculator
+.PHONY : FitCalculator
+
+# fast build rule for target.
+FitCalculator/fast:
+	$(MAKE) -f CMakeFiles/FitCalculator.dir/build.make CMakeFiles/FitCalculator.dir/build
+.PHONY : FitCalculator/fast
+
+#=============================================================================
+# Target rules for targets named G__FitCalculator
+
+# Build rule for target.
+G__FitCalculator: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 G__FitCalculator
+.PHONY : G__FitCalculator
+
+# fast build rule for target.
+G__FitCalculator/fast:
+	$(MAKE) -f CMakeFiles/G__FitCalculator.dir/build.make CMakeFiles/G__FitCalculator.dir/build
+.PHONY : G__FitCalculator/fast
+
+#=============================================================================
+# Target rules for targets named WorkspaceCalculator
+
+# Build rule for target.
+WorkspaceCalculator: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 WorkspaceCalculator
+.PHONY : WorkspaceCalculator
+
+# fast build rule for target.
+WorkspaceCalculator/fast:
+	$(MAKE) -f CMakeFiles/WorkspaceCalculator.dir/build.make CMakeFiles/WorkspaceCalculator.dir/build
+.PHONY : WorkspaceCalculator/fast
+
+#=============================================================================
+# Target rules for targets named ProfileLikelihoodTestStatEnhanced
+
+# Build rule for target.
+ProfileLikelihoodTestStatEnhanced: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ProfileLikelihoodTestStatEnhanced
+.PHONY : ProfileLikelihoodTestStatEnhanced
+
+# fast build rule for target.
+ProfileLikelihoodTestStatEnhanced/fast:
+	$(MAKE) -f CMakeFiles/ProfileLikelihoodTestStatEnhanced.dir/build.make CMakeFiles/ProfileLikelihoodTestStatEnhanced.dir/build
+.PHONY : ProfileLikelihoodTestStatEnhanced/fast
+
+#=============================================================================
+# Target rules for targets named LimitCalculator
+
+# Build rule for target.
+LimitCalculator: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LimitCalculator
+.PHONY : LimitCalculator
+
+# fast build rule for target.
+LimitCalculator/fast:
+	$(MAKE) -f CMakeFiles/LimitCalculator.dir/build.make CMakeFiles/LimitCalculator.dir/build
+.PHONY : LimitCalculator/fast
 
 FitCalculator.o: FitCalculator.cxx.o
 
@@ -534,33 +495,6 @@ LikelihoodCalculator.cxx.s:
 	$(MAKE) -f CMakeFiles/LikelihoodCalculator.dir/build.make CMakeFiles/LikelihoodCalculator.dir/LikelihoodCalculator.cxx.s
 .PHONY : LikelihoodCalculator.cxx.s
 
-LikelihoodScan.o: LikelihoodScan.C.o
-
-.PHONY : LikelihoodScan.o
-
-# target to build an object file
-LikelihoodScan.C.o:
-	$(MAKE) -f CMakeFiles/LikelihoodScan.dir/build.make CMakeFiles/LikelihoodScan.dir/LikelihoodScan.C.o
-.PHONY : LikelihoodScan.C.o
-
-LikelihoodScan.i: LikelihoodScan.C.i
-
-.PHONY : LikelihoodScan.i
-
-# target to preprocess a source file
-LikelihoodScan.C.i:
-	$(MAKE) -f CMakeFiles/LikelihoodScan.dir/build.make CMakeFiles/LikelihoodScan.dir/LikelihoodScan.C.i
-.PHONY : LikelihoodScan.C.i
-
-LikelihoodScan.s: LikelihoodScan.C.s
-
-.PHONY : LikelihoodScan.s
-
-# target to generate assembly for a file
-LikelihoodScan.C.s:
-	$(MAKE) -f CMakeFiles/LikelihoodScan.dir/build.make CMakeFiles/LikelihoodScan.dir/LikelihoodScan.C.s
-.PHONY : LikelihoodScan.C.s
-
 LimitCalculator.o: LimitCalculator.cxx.o
 
 .PHONY : LimitCalculator.o
@@ -642,86 +576,32 @@ ProfileLikelihoodTestStatEnhanced.cxx.s:
 	$(MAKE) -f CMakeFiles/ProfileLikelihoodTestStatEnhanced.dir/build.make CMakeFiles/ProfileLikelihoodTestStatEnhanced.dir/ProfileLikelihoodTestStatEnhanced.cxx.s
 .PHONY : ProfileLikelihoodTestStatEnhanced.cxx.s
 
-SimpleFit.o: SimpleFit.C.o
-
-.PHONY : SimpleFit.o
-
-# target to build an object file
-SimpleFit.C.o:
-	$(MAKE) -f CMakeFiles/SimpleFit.dir/build.make CMakeFiles/SimpleFit.dir/SimpleFit.C.o
-.PHONY : SimpleFit.C.o
-
-SimpleFit.i: SimpleFit.C.i
-
-.PHONY : SimpleFit.i
-
-# target to preprocess a source file
-SimpleFit.C.i:
-	$(MAKE) -f CMakeFiles/SimpleFit.dir/build.make CMakeFiles/SimpleFit.dir/SimpleFit.C.i
-.PHONY : SimpleFit.C.i
-
-SimpleFit.s: SimpleFit.C.s
-
-.PHONY : SimpleFit.s
-
-# target to generate assembly for a file
-SimpleFit.C.s:
-	$(MAKE) -f CMakeFiles/SimpleFit.dir/build.make CMakeFiles/SimpleFit.dir/SimpleFit.C.s
-.PHONY : SimpleFit.C.s
-
-StandardFrequentistDiscovery.o: StandardFrequentistDiscovery.C.o
-
-.PHONY : StandardFrequentistDiscovery.o
-
-# target to build an object file
-StandardFrequentistDiscovery.C.o:
-	$(MAKE) -f CMakeFiles/StandardFrequentistDiscovery.dir/build.make CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.C.o
-.PHONY : StandardFrequentistDiscovery.C.o
-
-StandardFrequentistDiscovery.i: StandardFrequentistDiscovery.C.i
-
-.PHONY : StandardFrequentistDiscovery.i
-
-# target to preprocess a source file
-StandardFrequentistDiscovery.C.i:
-	$(MAKE) -f CMakeFiles/StandardFrequentistDiscovery.dir/build.make CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.C.i
-.PHONY : StandardFrequentistDiscovery.C.i
-
-StandardFrequentistDiscovery.s: StandardFrequentistDiscovery.C.s
-
-.PHONY : StandardFrequentistDiscovery.s
-
-# target to generate assembly for a file
-StandardFrequentistDiscovery.C.s:
-	$(MAKE) -f CMakeFiles/StandardFrequentistDiscovery.dir/build.make CMakeFiles/StandardFrequentistDiscovery.dir/StandardFrequentistDiscovery.C.s
-.PHONY : StandardFrequentistDiscovery.C.s
-
-StandardHypoTestInv.o: StandardHypoTestInv.C.o
+StandardHypoTestInv.o: StandardHypoTestInv.cxx.o
 
 .PHONY : StandardHypoTestInv.o
 
 # target to build an object file
-StandardHypoTestInv.C.o:
-	$(MAKE) -f CMakeFiles/StandardHypoTestInv.dir/build.make CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.C.o
-.PHONY : StandardHypoTestInv.C.o
+StandardHypoTestInv.cxx.o:
+	$(MAKE) -f CMakeFiles/StandardHypoTestInv.dir/build.make CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.cxx.o
+.PHONY : StandardHypoTestInv.cxx.o
 
-StandardHypoTestInv.i: StandardHypoTestInv.C.i
+StandardHypoTestInv.i: StandardHypoTestInv.cxx.i
 
 .PHONY : StandardHypoTestInv.i
 
 # target to preprocess a source file
-StandardHypoTestInv.C.i:
-	$(MAKE) -f CMakeFiles/StandardHypoTestInv.dir/build.make CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.C.i
-.PHONY : StandardHypoTestInv.C.i
+StandardHypoTestInv.cxx.i:
+	$(MAKE) -f CMakeFiles/StandardHypoTestInv.dir/build.make CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.cxx.i
+.PHONY : StandardHypoTestInv.cxx.i
 
-StandardHypoTestInv.s: StandardHypoTestInv.C.s
+StandardHypoTestInv.s: StandardHypoTestInv.cxx.s
 
 .PHONY : StandardHypoTestInv.s
 
 # target to generate assembly for a file
-StandardHypoTestInv.C.s:
-	$(MAKE) -f CMakeFiles/StandardHypoTestInv.dir/build.make CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.C.s
-.PHONY : StandardHypoTestInv.C.s
+StandardHypoTestInv.cxx.s:
+	$(MAKE) -f CMakeFiles/StandardHypoTestInv.dir/build.make CMakeFiles/StandardHypoTestInv.dir/StandardHypoTestInv.cxx.s
+.PHONY : StandardHypoTestInv.cxx.s
 
 WorkspaceCalculator.o: WorkspaceCalculator.cxx.o
 
@@ -756,24 +636,21 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
-	@echo "... LimitCalculator"
-	@echo "... WorkspaceCalculator"
-	@echo "... FitCalculator"
-	@echo "... G__ProfileLikelihoodTestStatEnhanced"
-	@echo "... LikelihoodCalculator"
 	@echo "... rebuild_cache"
-	@echo "... G__FitCalculator"
-	@echo "... G__LimitCalculator"
-	@echo "... LikelihoodScan"
-	@echo "... SimpleFit"
-	@echo "... G__LikelihoodCalculator"
-	@echo "... G__PValueCalculator"
-	@echo "... G__WorkspaceCalculator"
-	@echo "... StandardFrequentistDiscovery"
-	@echo "... ProfileLikelihoodTestStatEnhanced"
-	@echo "... PValueCalculator"
+	@echo "... edit_cache"
 	@echo "... StandardHypoTestInv"
+	@echo "... PValueCalculator"
+	@echo "... G__PValueCalculator"
+	@echo "... G__LikelihoodCalculator"
+	@echo "... G__LimitCalculator"
+	@echo "... G__WorkspaceCalculator"
+	@echo "... LikelihoodCalculator"
+	@echo "... G__ProfileLikelihoodTestStatEnhanced"
+	@echo "... FitCalculator"
+	@echo "... G__FitCalculator"
+	@echo "... WorkspaceCalculator"
+	@echo "... ProfileLikelihoodTestStatEnhanced"
+	@echo "... LimitCalculator"
 	@echo "... FitCalculator.o"
 	@echo "... FitCalculator.i"
 	@echo "... FitCalculator.s"
@@ -798,9 +675,6 @@ help:
 	@echo "... LikelihoodCalculator.o"
 	@echo "... LikelihoodCalculator.i"
 	@echo "... LikelihoodCalculator.s"
-	@echo "... LikelihoodScan.o"
-	@echo "... LikelihoodScan.i"
-	@echo "... LikelihoodScan.s"
 	@echo "... LimitCalculator.o"
 	@echo "... LimitCalculator.i"
 	@echo "... LimitCalculator.s"
@@ -810,12 +684,6 @@ help:
 	@echo "... ProfileLikelihoodTestStatEnhanced.o"
 	@echo "... ProfileLikelihoodTestStatEnhanced.i"
 	@echo "... ProfileLikelihoodTestStatEnhanced.s"
-	@echo "... SimpleFit.o"
-	@echo "... SimpleFit.i"
-	@echo "... SimpleFit.s"
-	@echo "... StandardFrequentistDiscovery.o"
-	@echo "... StandardFrequentistDiscovery.i"
-	@echo "... StandardFrequentistDiscovery.s"
 	@echo "... StandardHypoTestInv.o"
 	@echo "... StandardHypoTestInv.i"
 	@echo "... StandardHypoTestInv.s"

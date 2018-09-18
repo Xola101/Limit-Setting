@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nicolin/CERN/LimitSetting/src
+CMAKE_SOURCE_DIR = /home/nicolin/CERN/UJ_LimitSetting/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nicolin/CERN/LimitSetting/bin
+CMAKE_BINARY_DIR = /home/nicolin/CERN/UJ_LimitSetting/bin
 
 # Include any dependencies generated for this target.
 include CMakeFiles/WorkspaceCalculator.dir/depend.make
@@ -58,11 +58,11 @@ include CMakeFiles/WorkspaceCalculator.dir/progress.make
 include CMakeFiles/WorkspaceCalculator.dir/flags.make
 
 G__WorkspaceCalculator.cxx: RootDict/WorkspaceCalculatorDict_LinkDef.h
-G__WorkspaceCalculator.cxx: /home/nicolin/CERN/LimitSetting/src/WorkspaceCalculator.h
-G__WorkspaceCalculator.cxx: /home/nicolin/CERN/LimitSetting/src/WorkspaceCalculator.h
+G__WorkspaceCalculator.cxx: /home/nicolin/CERN/UJ_LimitSetting/src/WorkspaceCalculator.h
+G__WorkspaceCalculator.cxx: /home/nicolin/CERN/UJ_LimitSetting/src/WorkspaceCalculator.h
 G__WorkspaceCalculator.cxx: RootDict/WorkspaceCalculatorDict_LinkDef.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nicolin/CERN/LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating G__WorkspaceCalculator.cxx, libWorkspaceCalculator_rdict.pcm, libWorkspaceCalculator.rootmap"
-	/usr/bin/cmake -E env LD_LIBRARY_PATH=/usr/local/lib:/usr/local/lib::/usr/local/cuda-9.1/lib64:/usr/local/include/Minuit2:/usr/local/cuda-9.1/lib64:/usr/local/include/Minuit2 /usr/local/bin/rootcling -v2 -f G__WorkspaceCalculator.cxx -s /home/nicolin/CERN/LimitSetting/bin/libWorkspaceCalculator.so -rml libWorkspaceCalculator.so -rmf /home/nicolin/CERN/LimitSetting/bin/libWorkspaceCalculator.rootmap -I/usr/local/include /home/nicolin/CERN/LimitSetting/src/WorkspaceCalculator.h /home/nicolin/CERN/LimitSetting/bin/RootDict/WorkspaceCalculatorDict_LinkDef.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nicolin/CERN/UJ_LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating G__WorkspaceCalculator.cxx, libWorkspaceCalculator_rdict.pcm, libWorkspaceCalculator.rootmap"
+	/usr/bin/cmake -E env LD_LIBRARY_PATH=/usr/local/lib:/usr/local/lib::/usr/local/cuda-9.1/lib64:/usr/local/include/Minuit2:/usr/local/cuda-9.1/lib64:/usr/local/include/Minuit2 /usr/local/bin/rootcling -v2 -f G__WorkspaceCalculator.cxx -s /home/nicolin/CERN/UJ_LimitSetting/bin/libWorkspaceCalculator.so -rml libWorkspaceCalculator.so -rmf /home/nicolin/CERN/UJ_LimitSetting/bin/libWorkspaceCalculator.rootmap -I/usr/local/include /home/nicolin/CERN/UJ_LimitSetting/src/WorkspaceCalculator.h /home/nicolin/CERN/UJ_LimitSetting/bin/RootDict/WorkspaceCalculatorDict_LinkDef.h
 
 libWorkspaceCalculator_rdict.pcm: G__WorkspaceCalculator.cxx
 	@$(CMAKE_COMMAND) -E touch_nocreate libWorkspaceCalculator_rdict.pcm
@@ -72,29 +72,29 @@ libWorkspaceCalculator.rootmap: G__WorkspaceCalculator.cxx
 
 CMakeFiles/WorkspaceCalculator.dir/G__WorkspaceCalculator.cxx.o: CMakeFiles/WorkspaceCalculator.dir/flags.make
 CMakeFiles/WorkspaceCalculator.dir/G__WorkspaceCalculator.cxx.o: G__WorkspaceCalculator.cxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nicolin/CERN/LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/WorkspaceCalculator.dir/G__WorkspaceCalculator.cxx.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/WorkspaceCalculator.dir/G__WorkspaceCalculator.cxx.o -c /home/nicolin/CERN/LimitSetting/bin/G__WorkspaceCalculator.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nicolin/CERN/UJ_LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/WorkspaceCalculator.dir/G__WorkspaceCalculator.cxx.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/WorkspaceCalculator.dir/G__WorkspaceCalculator.cxx.o -c /home/nicolin/CERN/UJ_LimitSetting/bin/G__WorkspaceCalculator.cxx
 
 CMakeFiles/WorkspaceCalculator.dir/G__WorkspaceCalculator.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WorkspaceCalculator.dir/G__WorkspaceCalculator.cxx.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nicolin/CERN/LimitSetting/bin/G__WorkspaceCalculator.cxx > CMakeFiles/WorkspaceCalculator.dir/G__WorkspaceCalculator.cxx.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nicolin/CERN/UJ_LimitSetting/bin/G__WorkspaceCalculator.cxx > CMakeFiles/WorkspaceCalculator.dir/G__WorkspaceCalculator.cxx.i
 
 CMakeFiles/WorkspaceCalculator.dir/G__WorkspaceCalculator.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WorkspaceCalculator.dir/G__WorkspaceCalculator.cxx.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nicolin/CERN/LimitSetting/bin/G__WorkspaceCalculator.cxx -o CMakeFiles/WorkspaceCalculator.dir/G__WorkspaceCalculator.cxx.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nicolin/CERN/UJ_LimitSetting/bin/G__WorkspaceCalculator.cxx -o CMakeFiles/WorkspaceCalculator.dir/G__WorkspaceCalculator.cxx.s
 
 CMakeFiles/WorkspaceCalculator.dir/WorkspaceCalculator.cxx.o: CMakeFiles/WorkspaceCalculator.dir/flags.make
-CMakeFiles/WorkspaceCalculator.dir/WorkspaceCalculator.cxx.o: /home/nicolin/CERN/LimitSetting/src/WorkspaceCalculator.cxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nicolin/CERN/LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/WorkspaceCalculator.dir/WorkspaceCalculator.cxx.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/WorkspaceCalculator.dir/WorkspaceCalculator.cxx.o -c /home/nicolin/CERN/LimitSetting/src/WorkspaceCalculator.cxx
+CMakeFiles/WorkspaceCalculator.dir/WorkspaceCalculator.cxx.o: /home/nicolin/CERN/UJ_LimitSetting/src/WorkspaceCalculator.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nicolin/CERN/UJ_LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/WorkspaceCalculator.dir/WorkspaceCalculator.cxx.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/WorkspaceCalculator.dir/WorkspaceCalculator.cxx.o -c /home/nicolin/CERN/UJ_LimitSetting/src/WorkspaceCalculator.cxx
 
 CMakeFiles/WorkspaceCalculator.dir/WorkspaceCalculator.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WorkspaceCalculator.dir/WorkspaceCalculator.cxx.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nicolin/CERN/LimitSetting/src/WorkspaceCalculator.cxx > CMakeFiles/WorkspaceCalculator.dir/WorkspaceCalculator.cxx.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nicolin/CERN/UJ_LimitSetting/src/WorkspaceCalculator.cxx > CMakeFiles/WorkspaceCalculator.dir/WorkspaceCalculator.cxx.i
 
 CMakeFiles/WorkspaceCalculator.dir/WorkspaceCalculator.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WorkspaceCalculator.dir/WorkspaceCalculator.cxx.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nicolin/CERN/LimitSetting/src/WorkspaceCalculator.cxx -o CMakeFiles/WorkspaceCalculator.dir/WorkspaceCalculator.cxx.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nicolin/CERN/UJ_LimitSetting/src/WorkspaceCalculator.cxx -o CMakeFiles/WorkspaceCalculator.dir/WorkspaceCalculator.cxx.s
 
 # Object files for target WorkspaceCalculator
 WorkspaceCalculator_OBJECTS = \
@@ -108,7 +108,7 @@ libWorkspaceCalculator.a: CMakeFiles/WorkspaceCalculator.dir/G__WorkspaceCalcula
 libWorkspaceCalculator.a: CMakeFiles/WorkspaceCalculator.dir/WorkspaceCalculator.cxx.o
 libWorkspaceCalculator.a: CMakeFiles/WorkspaceCalculator.dir/build.make
 libWorkspaceCalculator.a: CMakeFiles/WorkspaceCalculator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nicolin/CERN/LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libWorkspaceCalculator.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nicolin/CERN/UJ_LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libWorkspaceCalculator.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/WorkspaceCalculator.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/WorkspaceCalculator.dir/link.txt --verbose=$(VERBOSE)
 
@@ -124,6 +124,6 @@ CMakeFiles/WorkspaceCalculator.dir/clean:
 CMakeFiles/WorkspaceCalculator.dir/depend: G__WorkspaceCalculator.cxx
 CMakeFiles/WorkspaceCalculator.dir/depend: libWorkspaceCalculator_rdict.pcm
 CMakeFiles/WorkspaceCalculator.dir/depend: libWorkspaceCalculator.rootmap
-	cd /home/nicolin/CERN/LimitSetting/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nicolin/CERN/LimitSetting/src /home/nicolin/CERN/LimitSetting/src /home/nicolin/CERN/LimitSetting/bin /home/nicolin/CERN/LimitSetting/bin /home/nicolin/CERN/LimitSetting/bin/CMakeFiles/WorkspaceCalculator.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nicolin/CERN/UJ_LimitSetting/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nicolin/CERN/UJ_LimitSetting/src /home/nicolin/CERN/UJ_LimitSetting/src /home/nicolin/CERN/UJ_LimitSetting/bin /home/nicolin/CERN/UJ_LimitSetting/bin /home/nicolin/CERN/UJ_LimitSetting/bin/CMakeFiles/WorkspaceCalculator.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/WorkspaceCalculator.dir/depend
 

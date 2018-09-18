@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nicolin/CERN/LimitSetting/src
+CMAKE_SOURCE_DIR = /home/nicolin/CERN/UJ_LimitSetting/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nicolin/CERN/LimitSetting/bin
+CMAKE_BINARY_DIR = /home/nicolin/CERN/UJ_LimitSetting/bin
 
 # Utility rule file for G__PValueCalculator.
 
@@ -59,11 +59,11 @@ CMakeFiles/G__PValueCalculator: libPValueCalculator.rootmap
 
 
 G__PValueCalculator.cxx: RootDict/PValueCalculatorDict_LinkDef.h
-G__PValueCalculator.cxx: /home/nicolin/CERN/LimitSetting/src/PValueCalculator.h
-G__PValueCalculator.cxx: /home/nicolin/CERN/LimitSetting/src/PValueCalculator.h
+G__PValueCalculator.cxx: /home/nicolin/CERN/UJ_LimitSetting/src/PValueCalculator.h
+G__PValueCalculator.cxx: /home/nicolin/CERN/UJ_LimitSetting/src/PValueCalculator.h
 G__PValueCalculator.cxx: RootDict/PValueCalculatorDict_LinkDef.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nicolin/CERN/LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating G__PValueCalculator.cxx, libPValueCalculator_rdict.pcm, libPValueCalculator.rootmap"
-	/usr/bin/cmake -E env LD_LIBRARY_PATH=/usr/local/lib:/usr/local/lib::/usr/local/cuda-9.1/lib64:/usr/local/include/Minuit2:/usr/local/cuda-9.1/lib64:/usr/local/include/Minuit2 /usr/local/bin/rootcling -v2 -f G__PValueCalculator.cxx -s /home/nicolin/CERN/LimitSetting/bin/libPValueCalculator.so -rml libPValueCalculator.so -rmf /home/nicolin/CERN/LimitSetting/bin/libPValueCalculator.rootmap -I/usr/local/include /home/nicolin/CERN/LimitSetting/src/PValueCalculator.h /home/nicolin/CERN/LimitSetting/bin/RootDict/PValueCalculatorDict_LinkDef.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nicolin/CERN/UJ_LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating G__PValueCalculator.cxx, libPValueCalculator_rdict.pcm, libPValueCalculator.rootmap"
+	/usr/bin/cmake -E env LD_LIBRARY_PATH=/usr/local/lib:/usr/local/lib::/usr/local/cuda-9.1/lib64:/usr/local/include/Minuit2:/usr/local/cuda-9.1/lib64:/usr/local/include/Minuit2 /usr/local/bin/rootcling -v2 -f G__PValueCalculator.cxx -s /home/nicolin/CERN/UJ_LimitSetting/bin/libPValueCalculator.so -rml libPValueCalculator.so -rmf /home/nicolin/CERN/UJ_LimitSetting/bin/libPValueCalculator.rootmap -I/usr/local/include /home/nicolin/CERN/UJ_LimitSetting/src/PValueCalculator.h /home/nicolin/CERN/UJ_LimitSetting/bin/RootDict/PValueCalculatorDict_LinkDef.h
 
 libPValueCalculator_rdict.pcm: G__PValueCalculator.cxx
 	@$(CMAKE_COMMAND) -E touch_nocreate libPValueCalculator_rdict.pcm
@@ -89,6 +89,6 @@ CMakeFiles/G__PValueCalculator.dir/clean:
 .PHONY : CMakeFiles/G__PValueCalculator.dir/clean
 
 CMakeFiles/G__PValueCalculator.dir/depend:
-	cd /home/nicolin/CERN/LimitSetting/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nicolin/CERN/LimitSetting/src /home/nicolin/CERN/LimitSetting/src /home/nicolin/CERN/LimitSetting/bin /home/nicolin/CERN/LimitSetting/bin /home/nicolin/CERN/LimitSetting/bin/CMakeFiles/G__PValueCalculator.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nicolin/CERN/UJ_LimitSetting/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nicolin/CERN/UJ_LimitSetting/src /home/nicolin/CERN/UJ_LimitSetting/src /home/nicolin/CERN/UJ_LimitSetting/bin /home/nicolin/CERN/UJ_LimitSetting/bin /home/nicolin/CERN/UJ_LimitSetting/bin/CMakeFiles/G__PValueCalculator.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/G__PValueCalculator.dir/depend
 

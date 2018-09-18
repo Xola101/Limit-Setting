@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/LikelihoodScan.dir/LikelihoodScan.C.o"
+  "CMakeFiles/LikelihoodScan.dir/LikelihoodScan.cxx.o"
   "LikelihoodScan.pdb"
   "LikelihoodScan"
 )

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nicolin/CERN/LimitSetting/src
+CMAKE_SOURCE_DIR = /home/nicolin/CERN/UJ_LimitSetting/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nicolin/CERN/LimitSetting/bin
+CMAKE_BINARY_DIR = /home/nicolin/CERN/UJ_LimitSetting/bin
 
 # Include any dependencies generated for this target.
 include CMakeFiles/LikelihoodCalculator.dir/depend.make
@@ -58,11 +58,11 @@ include CMakeFiles/LikelihoodCalculator.dir/progress.make
 include CMakeFiles/LikelihoodCalculator.dir/flags.make
 
 G__LikelihoodCalculator.cxx: RootDict/LikelihoodCalculatorDict_LinkDef.h
-G__LikelihoodCalculator.cxx: /home/nicolin/CERN/LimitSetting/src/LikelihoodCalculator.h
-G__LikelihoodCalculator.cxx: /home/nicolin/CERN/LimitSetting/src/LikelihoodCalculator.h
+G__LikelihoodCalculator.cxx: /home/nicolin/CERN/UJ_LimitSetting/src/LikelihoodCalculator.h
+G__LikelihoodCalculator.cxx: /home/nicolin/CERN/UJ_LimitSetting/src/LikelihoodCalculator.h
 G__LikelihoodCalculator.cxx: RootDict/LikelihoodCalculatorDict_LinkDef.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nicolin/CERN/LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating G__LikelihoodCalculator.cxx, libLikelihoodCalculator_rdict.pcm, libLikelihoodCalculator.rootmap"
-	/usr/bin/cmake -E env LD_LIBRARY_PATH=/usr/local/lib:/usr/local/lib::/usr/local/cuda-9.1/lib64:/usr/local/include/Minuit2:/usr/local/cuda-9.1/lib64:/usr/local/include/Minuit2 /usr/local/bin/rootcling -v2 -f G__LikelihoodCalculator.cxx -s /home/nicolin/CERN/LimitSetting/bin/libLikelihoodCalculator.so -rml libLikelihoodCalculator.so -rmf /home/nicolin/CERN/LimitSetting/bin/libLikelihoodCalculator.rootmap -I/usr/local/include /home/nicolin/CERN/LimitSetting/src/LikelihoodCalculator.h /home/nicolin/CERN/LimitSetting/bin/RootDict/LikelihoodCalculatorDict_LinkDef.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nicolin/CERN/UJ_LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating G__LikelihoodCalculator.cxx, libLikelihoodCalculator_rdict.pcm, libLikelihoodCalculator.rootmap"
+	/usr/bin/cmake -E env LD_LIBRARY_PATH=/usr/local/lib:/usr/local/lib::/usr/local/cuda-9.1/lib64:/usr/local/include/Minuit2:/usr/local/cuda-9.1/lib64:/usr/local/include/Minuit2 /usr/local/bin/rootcling -v2 -f G__LikelihoodCalculator.cxx -s /home/nicolin/CERN/UJ_LimitSetting/bin/libLikelihoodCalculator.so -rml libLikelihoodCalculator.so -rmf /home/nicolin/CERN/UJ_LimitSetting/bin/libLikelihoodCalculator.rootmap -I/usr/local/include /home/nicolin/CERN/UJ_LimitSetting/src/LikelihoodCalculator.h /home/nicolin/CERN/UJ_LimitSetting/bin/RootDict/LikelihoodCalculatorDict_LinkDef.h
 
 libLikelihoodCalculator_rdict.pcm: G__LikelihoodCalculator.cxx
 	@$(CMAKE_COMMAND) -E touch_nocreate libLikelihoodCalculator_rdict.pcm
@@ -72,29 +72,29 @@ libLikelihoodCalculator.rootmap: G__LikelihoodCalculator.cxx
 
 CMakeFiles/LikelihoodCalculator.dir/G__LikelihoodCalculator.cxx.o: CMakeFiles/LikelihoodCalculator.dir/flags.make
 CMakeFiles/LikelihoodCalculator.dir/G__LikelihoodCalculator.cxx.o: G__LikelihoodCalculator.cxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nicolin/CERN/LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LikelihoodCalculator.dir/G__LikelihoodCalculator.cxx.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LikelihoodCalculator.dir/G__LikelihoodCalculator.cxx.o -c /home/nicolin/CERN/LimitSetting/bin/G__LikelihoodCalculator.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nicolin/CERN/UJ_LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LikelihoodCalculator.dir/G__LikelihoodCalculator.cxx.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LikelihoodCalculator.dir/G__LikelihoodCalculator.cxx.o -c /home/nicolin/CERN/UJ_LimitSetting/bin/G__LikelihoodCalculator.cxx
 
 CMakeFiles/LikelihoodCalculator.dir/G__LikelihoodCalculator.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LikelihoodCalculator.dir/G__LikelihoodCalculator.cxx.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nicolin/CERN/LimitSetting/bin/G__LikelihoodCalculator.cxx > CMakeFiles/LikelihoodCalculator.dir/G__LikelihoodCalculator.cxx.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nicolin/CERN/UJ_LimitSetting/bin/G__LikelihoodCalculator.cxx > CMakeFiles/LikelihoodCalculator.dir/G__LikelihoodCalculator.cxx.i
 
 CMakeFiles/LikelihoodCalculator.dir/G__LikelihoodCalculator.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LikelihoodCalculator.dir/G__LikelihoodCalculator.cxx.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nicolin/CERN/LimitSetting/bin/G__LikelihoodCalculator.cxx -o CMakeFiles/LikelihoodCalculator.dir/G__LikelihoodCalculator.cxx.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nicolin/CERN/UJ_LimitSetting/bin/G__LikelihoodCalculator.cxx -o CMakeFiles/LikelihoodCalculator.dir/G__LikelihoodCalculator.cxx.s
 
 CMakeFiles/LikelihoodCalculator.dir/LikelihoodCalculator.cxx.o: CMakeFiles/LikelihoodCalculator.dir/flags.make
-CMakeFiles/LikelihoodCalculator.dir/LikelihoodCalculator.cxx.o: /home/nicolin/CERN/LimitSetting/src/LikelihoodCalculator.cxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nicolin/CERN/LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LikelihoodCalculator.dir/LikelihoodCalculator.cxx.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LikelihoodCalculator.dir/LikelihoodCalculator.cxx.o -c /home/nicolin/CERN/LimitSetting/src/LikelihoodCalculator.cxx
+CMakeFiles/LikelihoodCalculator.dir/LikelihoodCalculator.cxx.o: /home/nicolin/CERN/UJ_LimitSetting/src/LikelihoodCalculator.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nicolin/CERN/UJ_LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LikelihoodCalculator.dir/LikelihoodCalculator.cxx.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LikelihoodCalculator.dir/LikelihoodCalculator.cxx.o -c /home/nicolin/CERN/UJ_LimitSetting/src/LikelihoodCalculator.cxx
 
 CMakeFiles/LikelihoodCalculator.dir/LikelihoodCalculator.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LikelihoodCalculator.dir/LikelihoodCalculator.cxx.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nicolin/CERN/LimitSetting/src/LikelihoodCalculator.cxx > CMakeFiles/LikelihoodCalculator.dir/LikelihoodCalculator.cxx.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nicolin/CERN/UJ_LimitSetting/src/LikelihoodCalculator.cxx > CMakeFiles/LikelihoodCalculator.dir/LikelihoodCalculator.cxx.i
 
 CMakeFiles/LikelihoodCalculator.dir/LikelihoodCalculator.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LikelihoodCalculator.dir/LikelihoodCalculator.cxx.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nicolin/CERN/LimitSetting/src/LikelihoodCalculator.cxx -o CMakeFiles/LikelihoodCalculator.dir/LikelihoodCalculator.cxx.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nicolin/CERN/UJ_LimitSetting/src/LikelihoodCalculator.cxx -o CMakeFiles/LikelihoodCalculator.dir/LikelihoodCalculator.cxx.s
 
 # Object files for target LikelihoodCalculator
 LikelihoodCalculator_OBJECTS = \
@@ -108,7 +108,7 @@ libLikelihoodCalculator.a: CMakeFiles/LikelihoodCalculator.dir/G__LikelihoodCalc
 libLikelihoodCalculator.a: CMakeFiles/LikelihoodCalculator.dir/LikelihoodCalculator.cxx.o
 libLikelihoodCalculator.a: CMakeFiles/LikelihoodCalculator.dir/build.make
 libLikelihoodCalculator.a: CMakeFiles/LikelihoodCalculator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nicolin/CERN/LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libLikelihoodCalculator.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nicolin/CERN/UJ_LimitSetting/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libLikelihoodCalculator.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/LikelihoodCalculator.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LikelihoodCalculator.dir/link.txt --verbose=$(VERBOSE)
 
@@ -124,6 +124,6 @@ CMakeFiles/LikelihoodCalculator.dir/clean:
 CMakeFiles/LikelihoodCalculator.dir/depend: G__LikelihoodCalculator.cxx
 CMakeFiles/LikelihoodCalculator.dir/depend: libLikelihoodCalculator_rdict.pcm
 CMakeFiles/LikelihoodCalculator.dir/depend: libLikelihoodCalculator.rootmap
-	cd /home/nicolin/CERN/LimitSetting/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nicolin/CERN/LimitSetting/src /home/nicolin/CERN/LimitSetting/src /home/nicolin/CERN/LimitSetting/bin /home/nicolin/CERN/LimitSetting/bin /home/nicolin/CERN/LimitSetting/bin/CMakeFiles/LikelihoodCalculator.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nicolin/CERN/UJ_LimitSetting/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nicolin/CERN/UJ_LimitSetting/src /home/nicolin/CERN/UJ_LimitSetting/src /home/nicolin/CERN/UJ_LimitSetting/bin /home/nicolin/CERN/UJ_LimitSetting/bin /home/nicolin/CERN/UJ_LimitSetting/bin/CMakeFiles/LikelihoodCalculator.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/LikelihoodCalculator.dir/depend
 
