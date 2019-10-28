@@ -37,7 +37,7 @@ class RooRealVar;
 class RooAbsCollection;
 class RooDataSet;
 class RooAbsData;
-class RooAbsPdf;
+class RooAbsPdf ; ;
 
 namespace RooStats {
   class ModelConfig;

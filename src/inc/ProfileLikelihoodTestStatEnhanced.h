@@ -34,13 +34,13 @@ END_HTML
 #include "RooArgSet.h"
 
 #ifndef ROOSTATS_TestStatistic
-#include "RooStats/TestStatistic.h"
+#include "TestStatistic.h"
 #endif
 
 class TTree;
 class RooMinimizer;
 class RooAbsData;
-class RooAbsPdf;
+class RooAbsPdf ;;
 class RooAbsReal;
 class RooRealVar;
 class RooWorkspace;
